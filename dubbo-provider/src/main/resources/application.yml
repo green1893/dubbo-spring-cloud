@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: dubbo-provider-server
+
+dubbo:
+  scan:
+    base-packages: com.zrar.easyweb.dubbo.app.service
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: zookeeper://127.0.0.1:2181

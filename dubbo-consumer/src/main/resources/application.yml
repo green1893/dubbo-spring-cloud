@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: dubbo-consumer-server
+dubbo:
+  registry:
+    address: zookeeper://127.0.0.1:2181
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
